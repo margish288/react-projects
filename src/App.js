@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import FloatingDropdown from "./projects/FloatingDropdown";
 import DragAndDrop from "./projects/Dnd";
 import Layout from "./components/Layout";
+import Canvas from "./projects/Canvas";
+import Products from "./projects/practice/Products";
 
 function App() {
   return (
@@ -26,6 +28,17 @@ function App() {
             </Layout>
           }
         />
+        <Route
+          path="/canvas"
+          element={
+            <Layout>
+              <Canvas />
+            </Layout>
+          }
+        />
+        <Route path="/practice">
+          <Route path="products" element={<Products />} />
+        </Route>
       </Routes>
     </Router>
   );
