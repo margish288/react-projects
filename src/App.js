@@ -6,6 +6,7 @@ import DragAndDrop from "./projects/Dnd";
 import Layout from "./components/Layout";
 import Canvas from "./projects/Canvas";
 import Products from "./projects/practice/Products";
+import Modal from "./projects/practice/Modal";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         />
         <Route path="/practice">
           <Route path="products" element={<Products />} />
+          <Route path="modal" element={<Modal />} />
         </Route>
       </Routes>
     </Router>

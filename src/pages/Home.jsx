@@ -18,6 +18,10 @@ const links = [
     path: "/practice/products",
     name: "Products",
   },
+  {
+    path: "/practice/modal",
+    name: "Modal",
+  },
 ];
 
 const Home = () => {
