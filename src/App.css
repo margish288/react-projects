@@ -32,7 +32,6 @@
 }
 
 .modal-wrapper.modal {
-
   min-width: 700px;
   max-width: 1000px;
 
@@ -48,4 +47,14 @@
   gap: 8px;
   justify-content: space-around;
   margin: 8px 4px;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.block.hover {
+  background-color: green;
 }

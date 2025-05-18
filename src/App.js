@@ -7,14 +7,16 @@ import Layout from "./components/Layout";
 import Canvas from "./projects/Canvas";
 import Products from "./projects/practice/Products";
 import Modal from "./projects/practice/Modal";
+import ReactCode from "./projects/practice/ReactCode";
+import Js from "./projects/practice/Js";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route
-          path="/floating-dropdown"
+          path='/floating-dropdown'
           element={
             <Layout>
               <FloatingDropdown />
@@ -22,7 +24,7 @@ function App() {
           }
         />
         <Route
-          path="/drag-and-drop"
+          path='/drag-and-drop'
           element={
             <Layout>
               <DragAndDrop />
@@ -30,16 +32,18 @@ function App() {
           }
         />
         <Route
-          path="/canvas"
+          path='/canvas'
           element={
             <Layout>
               <Canvas />
             </Layout>
           }
         />
-        <Route path="/practice">
-          <Route path="products" element={<Products />} />
-          <Route path="modal" element={<Modal />} />
+        <Route path='/practice'>
+          <Route path='products' element={<Products />} />
+          <Route path='modal' element={<Modal />} />
+          <Route path='react' element={<ReactCode />} />
+          <Route path='js' element={<Js />} />
         </Route>
       </Routes>
     </Router>

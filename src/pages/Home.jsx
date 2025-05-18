@@ -22,14 +22,22 @@ const links = [
     path: "/practice/modal",
     name: "Modal",
   },
+  {
+    path: "/practice/react",
+    name: "React - Practice",
+  },
+  {
+    path: "/practice/js",
+    name: "JS - Practice",
+  },
 ];
 
 const Home = () => {
   return (
-    <div className="flex justify-between px-4 py-2">
+    <div className='flex justify-between px-4 py-2'>
       {links.map((link) => (
         <Link
-          className="px-2 py-1 text-black bg-slate-100 border hover:bg-slate-200 hover:border-slate-200 rounded-md transition-colors duration-300"
+          className='px-2 py-1 text-black bg-slate-100 border hover:bg-slate-200 hover:border-slate-200 rounded-md transition-colors duration-300'
           to={link.path}
         >
           {link.name}
