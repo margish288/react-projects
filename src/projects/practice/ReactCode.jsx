@@ -3,6 +3,7 @@ import useHook from "../../hooks/useHover";
 import usePrevious from "../../hooks/usePrevious";
 import useToggle from "../../hooks/useToggle";
 import useDebounce from "../../hooks/useDebounce";
+import useEffectOnce from "../../hooks/useEffectOnce";
 
 const App = () => {
   const [state, setState] = useState(0);
@@ -12,6 +13,11 @@ const App = () => {
   const debouncedValue = useDebounce(state, 1000);
 
   const update = () => setState((prev) => prev + 1);
+
+  useEffectOnce(() => {
+    // should only run once
+    console.log("1");
+  });
 
   return (
     <div>
