@@ -4,6 +4,7 @@ import usePrevious from "../../hooks/usePrevious";
 import useToggle from "../../hooks/useToggle";
 import useDebounce from "../../hooks/useDebounce";
 import useEffectOnce from "../../hooks/useEffectOnce";
+import PhoneNumber from "../../components/PhoneNumber";
 
 const App = () => {
   const [state, setState] = useState(0);
@@ -16,7 +17,7 @@ const App = () => {
 
   useEffectOnce(() => {
     // should only run once
-    console.log("1");
+    // console.log("1");
   });
 
   return (
@@ -39,6 +40,9 @@ const App = () => {
       <br />
 
       <div>Debounced Value : {debouncedValue}</div>
+
+      <br />
+      <PhoneNumber />
     </div>
   );
 };

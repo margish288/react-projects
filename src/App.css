@@ -1,4 +1,9 @@
 /* Modal styling */
+html {
+  color: black;
+  background-color: antiquewhite;
+}
+
 .modal-overlay {
   display: flex;
   justify-content: center;
